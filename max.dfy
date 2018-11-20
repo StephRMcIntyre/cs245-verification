@@ -1,3 +1,5 @@
+//max of two integers -- Stephanie Renee McIntyre
+//Based on the code used in the course overheads for Fall 2018
 method max(x: int, y: int) returns (max: int)
 /* Pre-Condition */   requires true;
 /* Post-Condition */  ensures (x>y && max==x) || (x<=y && max==y);
