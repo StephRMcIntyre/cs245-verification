@@ -19,7 +19,7 @@ method compute_power(a: int, n: int) returns (s: int)
   /* (| s = power(a,i) ^ i<=n |)          - assignment */    assert s == power(a,i) && i<=n;
   while (i < n)
   invariant s==power(a,i) && i<=n;
-  decreases n-i;
+  decreases n-i;                          //this is the variant
   {
     /* (| s = power(a,i) ^ i<=n ^ i<n |)  - partial-while */ assert s == power(a,i) && i<=n && i<n;
     /* (| s*a = power(a,i+1) ^ i+1<=n |)  - implied (b) */   assert s*a == power(a,i+1) && i+1<=n;
@@ -37,3 +37,10 @@ method compute_power(a: int, n: int) returns (s: int)
 /* Proof of implied (b): Details left as exercise, but this is relatively simple. */
 
 /* Proof of implied (c): Simple substitution and uses the fact that i=n. */
+
+/* Proof of termination: the loop guard gives us the expression i<n. This is equivalent to n-i>=0.
+   Prior to the loop, n>=0 and i=0.
+   Each iteration of the loop, i increases by 1 and thus n-i decreases by 1. Thus n-i will eventually reach 0.
+   When the n-i=0, n=i and thus the loop guard ends the loop as it is no longer the case that i<n.
+   Thus the program terminates.
+*/
