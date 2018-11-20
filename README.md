@@ -7,7 +7,7 @@ written in Dafny with the purpose of demonstrating the basics for program verifi
 Experiment and have fun with it!
 
 Requires: Pre-condition for the method.
-Ensures: Post-condition for the method.
+//Ensures: Post-condition for the method.
 
 Assumes: Pre-condition in the code.
 Asserts: Post-conditions in the code.
