@@ -11,5 +11,7 @@ or you can paste the code in their online environment https://rise4fun.com/dafny
 There are tutorials somewhere online... Find them if you are interested.
 
 Special thanks to Microsoft for making Dafny and to Rylo Ashmore introducing me to this.
+
 It really is like programming with someone constantly hovering over your shoulder...
+
 PLEASE JUST LET ME COMPILE THIS ONE THING!!! ASFDSGdjfhjklgjm'l!
