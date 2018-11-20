@@ -1,6 +1,6 @@
 //Simple Assignment Example -- Stephanie Renee McIntyre
 //Based on the code used in the course overheads for Fall 2018
-method simpleAssignment(y: int) returns (x: int) 
+method simple(y: int) returns (x: int) 
   requires y==6;
   ensures x==7;
 {
