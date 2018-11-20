@@ -1,3 +1,5 @@
+//Swap -- Stephanie Renee McIntyre
+//Based on the code used in the course overheads for Fall 2018
 method swap(x0: int, y0: int) returns (x: int,y: int)
 /* Pre-Condition should be here, but we need to "hack" it as inputs are immutable... So see (*) below */
 /* Post-Condition */ ensures y == x0 && x == y0;
