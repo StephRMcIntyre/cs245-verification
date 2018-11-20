@@ -6,12 +6,6 @@ written in Dafny with the purpose of demonstrating the basics for program verifi
 
 Experiment and have fun with it!
 
-Requires: Pre-condition for the method.
-//Ensures: Post-condition for the method.
-
-Assumes: Pre-condition in the code.
-Asserts: Post-conditions in the code.
-
 Dafny can be downloaded for your programming environment (look up how)
 or you can paste the code in their online environment https://rise4fun.com/dafny 
 There are tutorials somewhere online... Find them if you are interested.
