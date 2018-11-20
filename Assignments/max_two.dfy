@@ -5,21 +5,19 @@ method max(x: int, y: int) returns (max: int)
 /* Post-Condition */  ensures (x>y && max==x) || (x<=y && max==y);
 {   
     /* (| true |) - Pre-Condition: from requires */
-    
-    /* (| y = y0 ^ x = x0 |) - implied (a) */  
 
     if(x > y){
-      /* (| true ^ x > y |) - if-then-else */ assert (true && x > y);
-      /* (| (x > y ^ x = x) V (x <=y ^ x = y) |) - implied (a) */ assert (x > y && x == x) || (x <=y && x == y);
+      /* (| true ^ x > y |)                             - if-then-else */   assert (true && x > y);
+      /* (| (x > y ^ x = x) V (x <=y ^ x = y) |)        - implied (a) */    assert (x > y && x == x) || (x <=y && x == y);
       max := x;
-      /* (| (x > y ^ max = x) V (x <=y ^ max = y) |) - assignment */ assert (x > y && max == x) || (x <=y && max == y);
+      /* (| (x > y ^ max = x) V (x <=y ^ max = y) |)    - assignment */     assert (x > y && max == x) || (x <=y && max == y);
     }else{
-      /* (| true ^ -(x > y) |) - if-then-else */ assert (true && !(x > y));
-      /* (| (x > y ^ y = x) V (x <=y ^ y = y) |) - implied (b) */ assert (x > y && y == x) || (x <=y && y == y);
+      /* (| true ^ -(x > y) |)                          - if-then-else */   assert (true && !(x > y));
+      /* (| (x > y ^ y = x) V (x <=y ^ y = y) |)        - implied (b) */    assert (x > y && y == x) || (x <=y && y == y);
       max := y;
-      /* (| (x > y ^ max = x) V (x <=y ^ max = y) |) - assignment */ assert (x > y && max == x) || (x <=y && max == y);
+      /* (| (x > y ^ max = x) V (x <=y ^ max = y) |)    - assignment */     assert (x > y && max == x) || (x <=y && max == y);
     }
-    /* (| (x > y ^ max = x) V (x <=y ^ max = y) |) - if-then-else // Post-Condition: from ensures statement */
+    /* (| (x > y ^ max = x) V (x <=y ^ max = y) |)      - if-then-else //   Post-Condition: from ensures statement */
 }
 
 /* Proof of implied (a): 
