@@ -1,4 +1,4 @@
-//Simple Assignment Example -- Stephanie Renee McIntyre
+//Simple Assignment Example -- Steph Renee McIntyre
 //Based on the code used in the course overheads for Fall 2018
 method simple(y: int) returns (x: int) 
   requires y==6;
