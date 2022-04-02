@@ -1,4 +1,4 @@
-// A8Q2 — Stephanie Renee McIntyre
+// A8Q2 — Steph Renee McIntyre
 // Following the solutions from Carmen Bruni
 
 method A8Q1(x: int, y: int, z: int) returns (m: int)
