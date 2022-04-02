@@ -1,4 +1,4 @@
-// A8Q1 — Stephanie Renee McIntyre
+// A8Q1 — Steph Renee McIntyre
 // Following the solutions from Carmen Bruni
 
 // There is no definition for power, so this function will be used for validating that our imperative program is correct. This is just for Dafny.
